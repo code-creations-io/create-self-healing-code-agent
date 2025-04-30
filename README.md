@@ -1,4 +1,4 @@
-# build-langchain-web-browsing-agent-with-mcp
+# create-self-healing-code-agent
 
 - Created at: 2025-04-30
 - Created by: `🐢 Arun Godwin Patel @ Code Creations`
