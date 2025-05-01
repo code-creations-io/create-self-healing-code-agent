@@ -40,7 +40,7 @@ def self_correcting_loop(spec: str, max_rounds: int = 5) -> str:
     # 1️⃣ draft code
     raw_code = cw.run(CW_PROMPT + "\n\n" + spec)
     CODE_FILE.write_text(_extract(raw_code).strip() + "\n")
-    
+
     # 2️⃣ draft tests
     tests_task = (
         TW_PROMPT

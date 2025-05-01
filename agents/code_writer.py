@@ -1,4 +1,3 @@
-# agents/code_writer.py
 """
 A very small writer that just asks the LLM for code text.
 No sandbox execution → nothing gets ‘stuck’.
@@ -26,14 +25,13 @@ class _SimpleWriter:
         """
         `prompt` is the string the orchestrator gives us
         (it already contains SYSTEM_PROMPT + spec).
-
         """
         if self.is_callable:
             messages = [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user",   "content": prompt},
             ]
-            response = self.model(messages)        
+            response = self.model(messages)
             return response.content.strip()
 
         # Fallback path (OpenAI SDK)

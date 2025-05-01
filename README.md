@@ -392,15 +392,11 @@ This completes the setup of our self healing code generation multi-agent!
 Here are some example prompts you can use to test the module:
 
 ```python
-python main.py "Implement merge sort that passes the given signature and constraints"
-```
-
-```python
 python main.py "Implement quicksort(arr: list[int]) -> list[int] that returns a new sorted list. Do not use Python's built-in sort."
 ```
 
 ```python
-python main.py "Implement slugify(text: str, max_len: int = 80) -> str that lowercases, ascii-folds, replaces spaces with dashes, strips punctuation and truncates at max_len."
+python main.py "Implement slugify(text: str) -> str that lowercases, ascii-folds, replaces spaces with dashes and strips punctuation."
 ```
 
 ```python

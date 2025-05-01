@@ -1,4 +1,3 @@
-# agents/critic.py
 """Return a patched *user_code.py* file – text only, no execution."""
 
 from agents.llm_backends import get_model
