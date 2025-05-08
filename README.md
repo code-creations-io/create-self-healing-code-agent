@@ -207,7 +207,6 @@ Next, we will create the `critic.py` file in the `agents/` folder. This critic a
 
 ```python
 # agents/critic.py
-# agents/critic.py
 """Return a patched *user_code.py* file – text only, no execution."""
 
 from agents.llm_backends import get_model
